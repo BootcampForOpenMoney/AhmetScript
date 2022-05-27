@@ -151,16 +151,15 @@ console.log(typeof aa);
 
 // yaş hesaplama 
 
-var myBirtday = new Date ("14/3/2002");
+var myBirtday = new Date("14/3/2002");
 var ageDiff = Date.now() - myBirtday.getTime();
 var ageDate = new Date(ageDiff);
 
 console.log(ageDate);
 
-
 var babalarGunu = new Date();
 babalarGunu.setHours(0,0,0,0);
-babalarGunu.setFullYear(2019);
+babalarGunu.setFullYear(2022);
 babalarGunu.setDate(1);
 babalarGunu.setMonth(4);
 
