@@ -122,10 +122,58 @@ console.log(indexAhmet,indexSude);
 let amoiswant = indexAhmet > indexSude;
 
 let zayif = (indexAhmet >= 0) && (indexAhmet <=18.4);
-let normal = (indexAhmet >= 18.5) && (indexAhmet <=24.9) 
+let normal = (indexAhmet >= 18.5) && (indexAhmet <=24.9);
+let fazlaKilolu = (indexAhmet >= 25,0) && (indexAhmet <= 29,9); 
 
 console.log(zayif);
 console.log(normal);
+console.log(fazlaKilolu);
+
+// değişkenlere zaman atama (date)
+
+let aa = new Date();
+let birthday = new Date(2002,2,14); 
+// set methods işlemlerde değişiklik yapabiliyorum  
+aa.setFullYear(2020);
+
+// get methods
+console.log(aa.getDate()); // bugün ayın ne olduğunu söyler
+console.log(aa.getDay());
+console.log(aa.getFullYear());
+
+console.log(aa.getFullYear()-birthday.getFullYear());
+console.log(aa.getMonth()-birthday.getMonth());
+console.log(aa.getDate()-birthday.getDate());
+
+console.log(aa);
+console.log(typeof aa);
+
+
+// yaş hesaplama 
+
+var myBirtday = new Date ("14/3/2002");
+var ageDiff = Date.now() - myBirtday.getTime();
+var ageDate = new Date(ageDiff);
+
+console.log(ageDate);
+
+
+var babalarGunu = new Date();
+babalarGunu.setHours(0,0,0,0);
+babalarGunu.setFullYear(2019);
+babalarGunu.setDate(1);
+babalarGunu.setMonth(4);
+
+while(babalarGunu.getDay() != 0 ) {
+    babalarGunu.setDate(babalarGunu.getDate()+1)
+}
+babalarGunu.setDate(babalarGunu.getDate()+7)
+
+console.log(babalarGunu);
+
+
+
+
 
 
 
