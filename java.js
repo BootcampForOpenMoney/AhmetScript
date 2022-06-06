@@ -170,9 +170,177 @@ babalarGunu.setDate(babalarGunu.getDate()+7)
 
 console.log(babalarGunu);
 
+// Bu kısıma bakılacak tekrardan consolda dönmüyor
+
+
+// var num = 22.3231312;
+// val = num.toPrecision(7); // aynı zamanda numberı string halde yazdırıyor
+// console.log(val);
+
+val = Math.PI;
+val = Math.round() // yazdığım sayı durumuna göre aşşağıya ya da yukarı yuvarlar
+val = Math.ceil() // Sadece yukarı yuvarlama yapar
+val = Math.floor()// sadece aşşağıya yuvarlama
 
 
 
+// Demo : Arrays
+
+// "Bmw,Mercedes,Opel,Mazda" elemanlarına sahip bir dizi oluşturun.
+
+var arr = ["Bmw","Merdeces","Opel","Mazda"];
+// var arr2 = new Array("Bmw","Merdeces","Opel","Mazda")
+
+console.log(arr);
+
+// Dizi kaç elemanlıdır ?
+console.log(arr.length)
+
+// Dizinin ilk ve son elemanı nedir ?
+console.log(arr[0])
+console.log(arr[3])
+console.log(arr[arr.length-1])
+
+// "Renault" değerini dizinin sonuna ekleyin.
+// arr[4] = "Renault";
+arr[arr.length] = "Renault";
+arr[arr.length] = "Fiat";
+
+arr.push('Toyota');
+
+// "Toyota" değerini dizinin başına ekleyin.
+arr.unshift('Seat');
+
+// "Seat" değerini siliniz.
+arr.shift('Seat');
+
+// "Toyota" değerini siliniz.
+arr.pop('Toyota');
+
+// Dizi elemanlarını ters çevirin
+arr.reverse()
+
+// Dizi elemanlarını alfabetik olarak sıralayın.
+arr.sort();
+
+// [1,2,5,80] dizisini sıralayın.
+var numbers =[1,2,5,80,15];
+
+function compare(a,b){
+    if(a>b) return 1;
+    if(a==b) return 0;
+    if (a<b) return -1;
+}
+
+console.log(numbers.sort(compare)); 
+
+// "Opel" değeri dizinin bir elemanımıdır ?
+console.log(arr);
+console.log(arr.indexOf('Opel'));
+console.log(arr.includes('Opel'));
+
+
+// var str = "Chevrolet,Dacia";
+// ifadesini diziye çeviriniz.
+
+var str = "Chevrolet,Dacia";
+var arr2 = str.split(',');
+console.log(arr2)
+
+// Oluşturulan 2 dizinin elemanlarını bir başka dizi ile birleştirin.
+var arr3 = arr.concat(arr2);
+console.log(arr3);
+
+// Oluşturulan diziden son 2 elemanı siliniz.
+
+// console.log(arr3.pop());
+// console.log(arr3.pop());
+
+// console.log(arr3.splice(6,2));
+console.log(arr3.slice(6,8));
+
+console.log(arr3);
+
+/* Aşağıda verilen elemanları bir dizi içerisinde saklayınız.
+     
+     studentA : Yiğit Bilgi 2010
+     StudentB : Sena Turan  1999
+     studentC : Ahmet Turan 1998   
+
+*/
+
+var studentA = ['Yiğit','Bilgi',2010];
+var studentB = ['Sena','Turan',1999];
+var studentC = ['Ahmet','Turan',1998];
+
+var students =[studentA,studentB,studentC];
+
+console.log(students[0]);
+
+console.log(students[0][0]);
+console.log(students[0][1]);
+console.log(students[0][2]);
+
+console.log(students[1][0]);
+console.log(students[1][1]);
+console.log(students[1][2]);
+
+console.log(students[2][0]);
+console.log(students[2][1]);
+console.log(students[2][2]);
+
+console.log(students)
+
+
+
+const firstName='Sena';
+const age = 19;
+const isStudent = false;
+const school = 'university';
+
+// if(firstName === 'Sena'){
+//     console.log('Merhaba Sena');
+// }
+
+// if (age === 19){
+//     console.log('yaşınız 19');
+// }
+
+// if (isStudent){
+//     console.log('Merhaba öğrenci');
+// }else{
+//     console.log('Merhaba işler nasıl');
+// }
+
+
+// if (age>=18){
+
+//     if ((school == 'university') || (school == 'high school')){
+//         console.log('ehliyet alabilirsiniz');
+//     } else{
+//         console.log('eğitim durumunuz yetersiz');
+//     }
+
+// }else{
+//     console.log('ehliyet alamazsınız');
+// }
+
+
+// if (age > 0  && age<12 ){
+//     console.log(`${firstName} is a child`);
+// }else if (age >=13 && age <=19){
+//     console.log(`${firstName} is a teenager`);
+// }else{
+//     console.log(`${firstName} is an adult`);
+// }
+
+//undefined
+
+if (typeof id !== 'undefined'){
+    console.log('id: '+id);
+}else{
+    console.log('no id');
+}
 
 
 
