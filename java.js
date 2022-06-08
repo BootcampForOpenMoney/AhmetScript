@@ -344,4 +344,29 @@ if (typeof id !== 'undefined'){
 
 
 
+function yasımKac(dogumYili){
+    return 2022-dogumYili 
+}
 
+
+function emeklilikNeZaman(dogumYili,isim) {
+    let yas = yasımKac(dogumYili);
+    let emeklilik  = 65 - yas;
+
+if (emeklilik > 0) {
+    console.log(`${isim} emekli olamana ${emeklilik} yıl  kaldı geçmiş olsun`);
+}
+else {
+    console.log ("zaten emekli oldun kardeş");
+ } 
+}
+emeklilikNeZaman(1999,"ahmet");
+emeklilikNeZaman(1989,"nazlı");
+emeklilikNeZaman(1949,"hüseyin");
+
+console.log(yasımKac(2002));
+
+
+let ahmeoq = 12.1231;
+val = ahmeoq.toFixed()
+console.log(val);
